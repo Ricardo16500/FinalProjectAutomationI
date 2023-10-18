@@ -46,7 +46,7 @@ public class LoginModal extends BasePage {
 
         try {
 
-            WebDriverWait wait = new WebDriverWait(driver, 10);
+            WebDriverWait wait = new WebDriverWait(driver, 2);
             wait.until(ExpectedConditions.alertIsPresent());
 
             Alert alert = driver.switchTo().alert();

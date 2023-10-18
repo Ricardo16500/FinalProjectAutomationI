@@ -7,7 +7,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
         <classes>
-            <class name="main.LoginTest"/>
+            <class name="main.MainTest"/>
         </classes>
     </test>
 
@@ -15,7 +15,7 @@
 <!--        <parameter name="browser" value="chrome"/>-->
 <!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
 <!--        <packages>-->
-<!--            <package name="main"/>-->
+<!--            <package name="login"/>-->
 <!--        </packages>-->
 <!--    </test>-->
 
@@ -23,7 +23,7 @@
     <!--        <parameter name="browser" value="firefox"/>-->
     <!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
     <!--        <packages>-->
-    <!--            <package name="main"/>-->
+    <!--            <package name="login"/>-->
     <!--        </packages>-->
     <!--    </test>-->
 </suite>

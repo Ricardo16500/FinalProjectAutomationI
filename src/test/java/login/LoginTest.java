@@ -1,11 +1,10 @@
-package main;
+package login;
 
 import com.aventstack.extentreports.Status;
 import conf.BaseTest;
 import org.example.helpers.ScreenShotHelper;
 import org.example.pages.LoginModal;
 import org.example.pages.MenuPage;
-import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
