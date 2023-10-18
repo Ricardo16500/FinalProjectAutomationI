@@ -19,8 +19,8 @@ Automatizar la compra de un artículo en el sitio web https://www.demoblaze.com/
 # TODO
 
 - [ ] Configurar el proyecto
-  - [ ] Driver de Chrome para Windows y MacOS(Linux)
+  - [x] Driver de Chrome para Windows y MacOS(Linux)
+  - [x] Driver de Firefox para Windows y MacOS(Linux)
 - [ ] Automatizar la compra
 - [ ] Generar un reporte HTML
 - [ ] Tomar capturas de pantalla
-- 

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Full Regression" verbose="1">
+
+
+    <test name="TestLoginInChrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.demoblaze.com"/>
+        <classes>
+            <class name="main.LoginTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="TestPageInChrome">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
+<!--        <packages>-->
+<!--            <package name="main"/>-->
+<!--        </packages>-->
+<!--    </test>-->
+
+    <!--    <test name="TestPageInFirefox">-->
+    <!--        <parameter name="browser" value="firefox"/>-->
+    <!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
+    <!--        <packages>-->
+    <!--            <package name="main"/>-->
+    <!--        </packages>-->
+    <!--    </test>-->
+</suite>
