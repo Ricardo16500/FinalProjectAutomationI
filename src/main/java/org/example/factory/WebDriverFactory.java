@@ -15,6 +15,9 @@ public class WebDriverFactory {
             case "mac":
                 driver = createDriverForMac(browser);
                 break;
+            case "linux":
+                driver = createDriverForLinux(browser);
+                break;
             default:
                 throw new Exception("El sistema operativo " + os + " no es soportado");
         }
@@ -41,6 +44,18 @@ public class WebDriverFactory {
                 return new ChromeDriver();
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", "resources/geckodriver");
+                return new FirefoxDriver();
+            default:
+                throw new Exception("El navegador " + browser + " no es soportado");
+        }
+    }
+    private static WebDriver createDriverForLinux(String browser) throws Exception {
+        switch (browser){
+            case "chrome":
+                System.setProperty("webdriver.chrome.driver", "resources/Linux/chromedriver");
+                return new ChromeDriver();
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "resources/Linux/geckodriver");
                 return new FirefoxDriver();
             default:
                 throw new Exception("El navegador " + browser + " no es soportado");
