@@ -1,0 +1,9 @@
+2023-10-19T18:01:46,489 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-19T18:01:49,296 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-19T18:01:59,000 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-19T18:02:04,815 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-19T18:02:06,663 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-19T18:02:17,849 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-19T18:02:20,201 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-19T18:02:22,047 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-19T18:02:30,562 [main] INFO  (BaseTest.java:87) - Closing the driver

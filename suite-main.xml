@@ -3,12 +3,20 @@
 <suite name="Full Regression" verbose="1">
 
 
-    <test name="TestLoginInChrome">
+<!--    <test name="TestLoginInChrome">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
+<!--        <classes>-->
+<!--            <class name="main.MainTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="login smoke test">
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
-        <classes>
-            <class name="main.MainTest"/>
-        </classes>
+        <packages>
+            <package name="login"/>
+        </packages>
     </test>
 
 <!--    <test name="TestPageInChrome">-->
