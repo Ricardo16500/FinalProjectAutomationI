@@ -22,6 +22,7 @@ public class CartPage extends BasePage {
     private final By tableLocator = By.cssSelector("div.table-responsive table.table");
 
     private final By itemLocator = By.cssSelector("table.table tbody#tbodyid tr.success");
+    private By deleteItem = By.xpath("//tbody/tr/td[4]");
 
 
     public CartPage(WebDriver driver) {
@@ -29,7 +30,7 @@ public class CartPage extends BasePage {
     }
 
     public String getFirstItemName() throws IOException {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 8);
         wait.until(ExpectedConditions.visibilityOfElementLocated(firstItemName));
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Get first item name");
         return driver.findElement(firstItemName).getText();
@@ -46,7 +47,7 @@ public class CartPage extends BasePage {
             log.info("Items in the cart: " + items.size());
 
             for (WebElement item : items) {
-                item.findElement(By.xpath("//td[4]/a")).click();
+                item.findElement(deleteItem).click();
             }
         }
 

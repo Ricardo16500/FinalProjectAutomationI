@@ -1,8 +1,6 @@
 package org.example.pages;
 
-import com.aventstack.extentreports.Status;
 import lombok.Getter;
-import org.example.helpers.ScreenShotHelper;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 
 
-public class LoginModal extends BasePage {
+public class LoginPage extends BasePage {
 
     private By usernameTxt = By.id("loginusername");
 
@@ -22,7 +20,7 @@ public class LoginModal extends BasePage {
     private String alertText;
 
 
-    public LoginModal(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         super(driver);
     }
 
@@ -46,7 +44,7 @@ public class LoginModal extends BasePage {
 
         try {
 
-            WebDriverWait wait = new WebDriverWait(driver, 5);
+            WebDriverWait wait = new WebDriverWait(driver, 3);
             wait.until(ExpectedConditions.alertIsPresent());
 
             Alert alert = driver.switchTo().alert();
@@ -61,7 +59,7 @@ public class LoginModal extends BasePage {
             System.out.println("No se detectó un alerta en la página");
         }
 
-        ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Login");
+        //ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Login");
     }
 
 }

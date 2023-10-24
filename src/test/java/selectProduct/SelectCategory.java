@@ -1,14 +1,14 @@
-package main;
+package selectProduct;
 
 import conf.BaseTest;
 import org.example.pages.*;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class MainTest extends BaseTest {
-
+public class SelectCategory extends BaseTest {
 
     @Test(description = "Login with valid credentials")
     public void loginCorrect() throws IOException {
@@ -21,13 +21,13 @@ public class MainTest extends BaseTest {
         Assert.assertTrue(menuPage.logOutBtnIsDisplayed());
     }
 
-    @Test(description = "Move to Laptops Area" )
+    @Test(description = "Move to Laptops Area", enabled = false)
     public void moveToLaptopsArea() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginWithCredentials("userTest123456", "userTest123456");
+        loginPage.loginWithCredentials("a", "a");
 
         menuPage.clickOnLaptopsButton();
 
@@ -36,13 +36,13 @@ public class MainTest extends BaseTest {
         Assert.assertEquals(laptopsPage.getFirstItemName(), "Sony vaio i5");
     }
 
-    @Test(description = "Select item and add to cart")
+    @Test(description = "Select item and add to cart", enabled = true, priority = 1)
     public void selectItemAndAddToCart() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginWithCredentials("userTest123456", "userTest123456");
+        loginPage.loginWithCredentials("a", "a");
 
         menuPage.clickOnLaptopsButton();
 
@@ -109,5 +109,4 @@ public class MainTest extends BaseTest {
 
 
 */
-
 }

@@ -14,24 +14,24 @@ import java.io.IOException;
 public class LaptopsPage extends BasePage {
 
     private static final Logger log = LogManager.getLogger(LaptopsPage.class);
+    private String laptopName ="Sony vaio i5";
+    private By laptopLocator = By.xpath("//h4/a[contains(text(),\"Sony vaio i5\")]");
 
     public LaptopsPage(WebDriver driver) {
         super(driver);
     }
 
     public String getFirstItemName() {
-//
         WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.textToBe(By.xpath("//h4/a"), "Sony vaio i5"));
+        wait.until(ExpectedConditions.textToBe(By.xpath("//h4/a"), laptopName));
         return driver.findElement(By.xpath("//h4/a")).getText();
     }
 
     public void selectFirstItem() throws IOException {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.textToBe(By.xpath("//h4/a"), "Sony vaio i5"));
-        log.info("Clicking on first item:" + driver.findElement(By.xpath("//h4/a")).getText());
-        driver.findElement(By.xpath("//h4/a")).click();
-
+        String getFirstLaptopName = getFirstItemName();
+        log.info("Clicking on first item:" + getFirstLaptopName);
+        driver.findElement(laptopLocator).click();
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Select first item");
     }
+
 }

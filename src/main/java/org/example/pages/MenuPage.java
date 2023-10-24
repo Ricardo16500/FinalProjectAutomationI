@@ -15,6 +15,8 @@ public class MenuPage extends BasePage {
     private By logInBtn = By.id("login2");
     private By logOutBtn = By.id("logout2");
     private By CartButton = By.id("cartur");
+    private By laptopsButton = By.xpath("//a[contains(text(),'Laptops')]");
+
 
     public MenuPage(WebDriver driver) {
         super(driver);
@@ -42,6 +44,10 @@ public class MenuPage extends BasePage {
         log.info("Log out button is displayed after wait: " + driver.findElement(logOutBtn).isDisplayed());
 
         return driver.findElement(logOutBtn).isDisplayed();
+    }
+
+    public void clickOnLaptopsButton() {
+        driver.findElement(laptopsButton).click();
     }
 
 
