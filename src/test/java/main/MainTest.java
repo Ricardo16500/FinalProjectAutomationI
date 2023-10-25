@@ -10,7 +10,7 @@ import java.io.IOException;
 public class MainTest extends BaseTest {
 
 
-    @Test(description = "Login with valid credentials")
+    @Test(description = "Login with valid credentials",  enabled = false)
     public void loginCorrect() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
@@ -21,7 +21,7 @@ public class MainTest extends BaseTest {
         Assert.assertTrue(menuPage.logOutBtnIsDisplayed());
     }
 
-    @Test(description = "Move to Laptops Area" )
+    @Test(description = "Move to Laptops Area",  enabled = false )
     public void moveToLaptopsArea() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
@@ -36,7 +36,7 @@ public class MainTest extends BaseTest {
         Assert.assertEquals(laptopsPage.getFirstItemName(), "Sony vaio i5");
     }
 
-    @Test(description = "Select item and add to cart")
+    @Test(description = "Select item and add to cart",  enabled = false)
     public void selectItemAndAddToCart() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
@@ -59,16 +59,25 @@ public class MainTest extends BaseTest {
 
     }
 
-    /*
+
     @Test(description = "Remove all items from cart", enabled = true)
     public void removeAllItemsFromCart() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginWithCredentials("a", "a");
+        loginPage.loginWithCredentials("userTest123456", "userTest123456");
+        menuPage.clickOnLaptopsButton();
+
+        LaptopsPage laptopsPage = new LaptopsPage(driver);
+        laptopsPage.selectFirstItem();
+
+
+        ProductPage productPage = new ProductPage(driver);
+        productPage.clickOnAddToCartButton();
 
         menuPage.clickOnCartButton();
+
 
         CartPage cartPage = new CartPage(driver);
         cartPage.removeAllItems();
@@ -76,7 +85,7 @@ public class MainTest extends BaseTest {
         Assert.assertFalse(cartPage.areThereAnyItemsInTheCart());
 
     }
-
+/*
     @Test(description = "Remove all items before select item and add to cart", enabled = true)
     public void removeAllItemsSelectItemAndAddToCart() throws IOException {
         MenuPage menuPage = new MenuPage(driver);

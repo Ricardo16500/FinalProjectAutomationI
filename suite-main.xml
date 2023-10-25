@@ -3,11 +3,18 @@
 <suite name="Full Regression" verbose="1">
 
 
-    <test name="TestLoginInChrome">
+<!--    <test name="TestLoginInChrome">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
+<!--        <packages>-->
+<!--            <package name="main"/>-->
+<!--        </packages>-->
+<!--    </test>-->
+    <test name="TestPurchase">
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
         <packages>
-            <package name="main"/>
+            <package name="purchase"/>
         </packages>
     </test>
 

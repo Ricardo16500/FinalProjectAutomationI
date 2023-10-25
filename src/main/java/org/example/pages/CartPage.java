@@ -22,7 +22,9 @@ public class CartPage extends BasePage {
     private final By tableLocator = By.cssSelector("div.table-responsive table.table");
 
     private final By itemLocator = By.cssSelector("table.table tbody#tbodyid tr.success");
-    private By deleteItem = By.xpath("//tbody/tr/td[4]");
+    private By deleteItem = By.xpath("//tbody/tr/td[4]/a[contains(text(),\"Delete\")]");
+
+    private By btnPlaceOrder = By.xpath("//button[contains(text(),\"Place Order\")]");
 
 
     public CartPage(WebDriver driver) {
@@ -38,45 +40,62 @@ public class CartPage extends BasePage {
 
     public void removeAllItems() {
         //TODO: AVC Funciona AVC No funciona
-        log.info("Removing all items from the cart");
+//        log.info("Removing all items from the cart");
+//
+//        while(areThereAnyItemsInTheCart()){
+//            WebElement table = driver.findElement(tableLocator);
+//            List<WebElement> items = table.findElements(itemLocator);
+//
+//            log.info("Items in the cart: " + items.size());
+//
+//            for (WebElement item : items) {
+//                item.findElement(deleteItem).click();
+//            }
+//        }
 
-        while(areThereAnyItemsInTheCart()){
-            WebElement table = driver.findElement(tableLocator);
-            List<WebElement> items = table.findElements(itemLocator);
-
-            log.info("Items in the cart: " + items.size());
-
-            for (WebElement item : items) {
-                item.findElement(deleteItem).click();
-            }
-        }
+        driver.findElement(deleteItem).click();
 
 
     }
-
+/*
     public boolean areThereAnyItemsInTheCart() {
         //TODO: Mejorar la logica de este metodo
 
         log.info("Checking if there are any items in the cart");
 
         try {
-            WebDriverWait wait = new WebDriverWait(driver, 2);
 
+            WebDriverWait wait = new WebDriverWait(driver, 10);
             wait.until(ExpectedConditions.or(
                     ExpectedConditions.visibilityOfElementLocated(tableLocator),
-                    ExpectedConditions.presenceOfElementLocated(itemLocator)
-            ));
+                    ExpectedConditions.presenceOfElementLocated(itemLocator)));
 
             WebElement table = driver.findElement(tableLocator);
 
-            log.info("Are there any items in the cart? " + !table.findElements(itemLocator).isEmpty());
-            return !table.findElements(itemLocator).isEmpty();
+            log.info("Are there any items in the cart? " + table.findElements(itemLocator).isEmpty());
+            return table.findElements(itemLocator).isEmpty();
         } catch (Exception e) {
             log.error("No items in the cart: " + e);
         }
         log.info("Are there any items in the cart? " + false + " (Exception)");
 
         return false;
+    }
+    */
+
+
+
+    public boolean areThereAnyItemsInTheCart() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(tableLocator)
+                ));
+
+        return driver.findElement(firstItemName).isDisplayed();
+    }
+    public void placeOrder(){
+        driver.findElement(btnPlaceOrder).click();
     }
 
 }
