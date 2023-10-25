@@ -18,6 +18,7 @@ public class CartPage extends BasePage {
     private static final Logger log = LogManager.getLogger(LaptopsPage.class);
 
     private final By firstItemName = By.xpath("//tbody/tr/td[2]");
+    private final By productPrice = By.xpath("//tbody/tr/td[3]");
 
     private final By tableLocator = By.cssSelector("div.table-responsive table.table");
 
@@ -37,51 +38,18 @@ public class CartPage extends BasePage {
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Get first item name");
         return driver.findElement(firstItemName).getText();
     }
+    public String getPrice() throws IOException {
+        WebDriverWait wait = new WebDriverWait(driver, 8);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(productPrice));
+        ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Get price item");
+        return driver.findElement(productPrice).getText();
+    }
 
     public void removeAllItems() {
-        //TODO: AVC Funciona AVC No funciona
-//        log.info("Removing all items from the cart");
-//
-//        while(areThereAnyItemsInTheCart()){
-//            WebElement table = driver.findElement(tableLocator);
-//            List<WebElement> items = table.findElements(itemLocator);
-//
-//            log.info("Items in the cart: " + items.size());
-//
-//            for (WebElement item : items) {
-//                item.findElement(deleteItem).click();
-//            }
-//        }
-
+        log.info("Delete a item from cart");
         driver.findElement(deleteItem).click();
-
-
     }
-/*
-    public boolean areThereAnyItemsInTheCart() {
-        //TODO: Mejorar la logica de este metodo
 
-        log.info("Checking if there are any items in the cart");
-
-        try {
-
-            WebDriverWait wait = new WebDriverWait(driver, 10);
-            wait.until(ExpectedConditions.or(
-                    ExpectedConditions.visibilityOfElementLocated(tableLocator),
-                    ExpectedConditions.presenceOfElementLocated(itemLocator)));
-
-            WebElement table = driver.findElement(tableLocator);
-
-            log.info("Are there any items in the cart? " + table.findElements(itemLocator).isEmpty());
-            return table.findElements(itemLocator).isEmpty();
-        } catch (Exception e) {
-            log.error("No items in the cart: " + e);
-        }
-        log.info("Are there any items in the cart? " + false + " (Exception)");
-
-        return false;
-    }
-    */
 
 
 

@@ -3,42 +3,27 @@
 <suite name="Full Regression" verbose="1">
 
 
-<!--    <test name="TestLoginInChrome">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
-<!--        <packages>-->
-<!--            <package name="main"/>-->
-<!--        </packages>-->
-<!--    </test>-->
-    <test name="TestPurchase">
+
+    <test name="Regression Test in Chrome">
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
         <packages>
+            <package name="login"/>
             <package name="descriptionProduct"/>
+            <package name="productIntoCart"/>
+            <package name="purchase"/>
+        </packages>
+    </test>
+    <test name="Regression Test in Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="https://www.demoblaze.com"/>
+        <packages>
+            <package name="login"/>
+            <package name="descriptionProduct"/>
+            <package name="productIntoCart"/>
+            <package name="purchase"/>
         </packages>
     </test>
 
-<!--    <test name="login smoke test">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
-<!--        <packages>-->
-<!--            <package name="login"/>-->
-<!--        </packages>-->
-<!--    </test>-->
 
-<!--    <test name="TestPageInChrome">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
-<!--        <packages>-->
-<!--            <package name="login"/>-->
-<!--        </packages>-->
-<!--    </test>-->
-
-    <!--    <test name="TestPageInFirefox">-->
-    <!--        <parameter name="browser" value="firefox"/>-->
-    <!--        <parameter name="url" value="https://www.demoblaze.com"/>-->
-    <!--        <packages>-->
-    <!--            <package name="login"/>-->
-    <!--        </packages>-->
-    <!--    </test>-->
 </suite>
