@@ -14,7 +14,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
         <packages>
-            <package name="purchase"/>
+            <package name="descriptionProduct"/>
         </packages>
     </test>
 

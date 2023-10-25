@@ -15,7 +15,7 @@ public class ProductPage extends BasePage {
         super(driver);
     }
     private By laptopName = By.xpath("//h2[contains(text(),\"Sony vaio i5\")]");
-//    private By laptopPrice = By.xpath("//h3[contains(text(),\"790\")]");
+    private By laptopPrice = By.xpath("//h3[contains(text(),\"790\")]");
 
 
     public void clickOnAddToCartButton() throws IOException {
@@ -31,6 +31,9 @@ public class ProductPage extends BasePage {
     }
     public boolean laptopNameIsDisplayed(){
         return driver.findElement(laptopName).isDisplayed();
+    }
+    public boolean laptopPriceIsDisplayed(){
+        return driver.findElement(laptopPrice).isDisplayed();
     }
 
 }
