@@ -2,10 +2,14 @@ package login;
 
 import com.aventstack.extentreports.Status;
 import conf.BaseTest;
+import org.example.helpers.ReportManager;
 import org.example.helpers.ScreenShotHelper;
 import org.example.pages.LoginPage;
 import org.example.pages.MenuPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -16,13 +20,16 @@ public class LoginTest extends BaseTest {
      * user: userTest123456
      * password: userTest123456
      */
+
+
+
     @Test(description = "Login with valid credentials")
     public void loginCorrect() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginWithCredentials("userTest123456", "userTest123456");
+        loginPage.loginWithCredentials(getUser(), getPassword());
 
         Assert.assertTrue(menuPage.logOutBtnIsDisplayed());
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Login correct");

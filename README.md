@@ -1,5 +1,12 @@
 # FinalProjectAutomationI
 
+## Integrantes
+
+- Yamil Ignacio Paz Sea
+- Fabio Ricardo Vaquera Montero
+
+## Configuración del proyecto
+
 Automatizar la compra de un artículo en el sitio web https://www.demoblaze.com/ utilizando Selenium, Java y TestNG implica los siguientes pasos:
 
 1. Configurar el proyecto: Se debe crear un proyecto Java y agregar las dependencias necesarias de Selenium y TestNG. Luego, configurar el proyecto para admitir tanto Chrome como Firefox.
@@ -18,10 +25,10 @@ Automatizar la compra de un artículo en el sitio web https://www.demoblaze.com/
 
 # TODO
 
-- [ ] Configurar el proyecto
+- [x] Configurar el proyecto
   - [x] Driver de Chrome para Windows y MacOS(Linux)
   - [x] Driver de Firefox para Windows y MacOS(Linux)
-- [ ] Automatizar la compra
+- [x] Automatizar la compra
   - [x] Abrir el sitio web
   - [x] Iniciar sesión
   - [x] Navegar a la sección de laptops
@@ -29,6 +36,6 @@ Automatizar la compra de un artículo en el sitio web https://www.demoblaze.com/
   - [x] Ver los detalles del producto
   - [x] Agregar el producto al carrito
   - [x] Validar que el producto esté en el carrito
-  - [ ] Validar que el resumen del producto sea correcto
-- [ ] Generar un reporte HTML
-- [ ] Tomar capturas de pantalla
+  - [x] Validar que el resumen del producto sea correcto
+- [x] Generar un reporte HTML
+- [x] Tomar capturas de pantalla

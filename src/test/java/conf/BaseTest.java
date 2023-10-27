@@ -2,6 +2,8 @@ package conf;
 
 import com.aventstack.extentreports.Status;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.factory.WebDriverFactory;
@@ -22,17 +24,31 @@ public class BaseTest {
 
     private String browser;
 
+    @Getter
+    @Setter
+    private String user;
+
+    @Getter
+    @Setter
+    private String password;
+
     private static final Logger log = LogManager.getLogger(BaseTest.class);
+
 
 
     @BeforeSuite
     public void setupSuite() throws Exception {
         ReportManager.init("reports", "PurchaseSuite");
+
+
+
     }
 
-    @Parameters({"browser", "url"})
+    @Parameters({"browser", "url", "user", "password"})
     @BeforeMethod
-    public void setup(ITestResult iTestResult, String browser, String url) throws Exception {
+    public void setup(ITestResult iTestResult, String browser, String url, String user, String password) throws Exception {
+        this.setUser(user);
+        this.setPassword(password);
         this.setUrl(url);
         this.setBrowser(browser.toLowerCase());
         ReportManager.getInstance().startTest(iTestResult.getMethod().getDescription());
