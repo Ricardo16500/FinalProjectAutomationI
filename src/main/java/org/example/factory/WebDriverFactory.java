@@ -27,10 +27,10 @@ public class WebDriverFactory {
     private static WebDriver createDriverForWindows(String browser) throws Exception {
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "resources/Windows/chromedriver.exe");
                 return new ChromeDriver();
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "resources/Windows/geckodriver.exe");
                 return new FirefoxDriver();
             default:
                 throw new Exception("El navegador " + browser + " no es soportado");
@@ -40,10 +40,10 @@ public class WebDriverFactory {
     private static WebDriver createDriverForMac(String browser) throws Exception {
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "resources/Mac/chromedriver");
                 return new ChromeDriver();
             case "firefox":
-                System.setProperty("webdriver.gecko.driver", "resources/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "resources/Mac/geckodriver");
                 return new FirefoxDriver();
             default:
                 throw new Exception("El navegador " + browser + " no es soportado");
