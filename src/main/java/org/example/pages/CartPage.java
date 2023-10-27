@@ -38,6 +38,7 @@ public class CartPage extends BasePage {
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Get first item name");
         return driver.findElement(firstItemName).getText();
     }
+
     public String getPrice() throws IOException {
         WebDriverWait wait = new WebDriverWait(driver, 8);
         wait.until(ExpectedConditions.visibilityOfElementLocated(productPrice));
@@ -51,18 +52,23 @@ public class CartPage extends BasePage {
     }
 
 
-
-
     public boolean areThereAnyItemsInTheCart() {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.or(
                 ExpectedConditions.visibilityOfElementLocated(tableLocator)
-                ));
+        ));
 
         return driver.findElement(firstItemName).isDisplayed();
     }
-    public void placeOrder(){
+
+    public void placeOrder() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(itemLocator)
+        ));
+
         driver.findElement(btnPlaceOrder).click();
     }
 
