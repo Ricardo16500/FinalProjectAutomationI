@@ -1,0 +1,172 @@
+2023-10-25T01:02:41,915 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T01:02:46,861 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T01:02:53,119 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T01:03:03,009 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T01:10:31,032 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T01:10:39,171 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T01:11:10,811 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T01:11:14,490 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T01:11:21,018 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T01:11:32,555 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T01:20:36,920 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T01:20:44,038 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T01:20:50,536 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T01:20:54,419 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T15:54:45,334 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T15:54:55,459 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:00:03,792 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:00:09,893 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:00:47,213 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:00:49,279 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:01:21,093 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:01:23,500 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:01:30,631 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T16:01:37,517 [main] INFO  (CartPage.java:49) - Delete a item from cart
+2023-10-25T16:01:39,860 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:05:01,327 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:05:08,953 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:05:16,860 [main] INFO  (MenuPage.java:41) - Log out button is displayed before wait: false
+2023-10-25T16:05:17,107 [main] INFO  (MenuPage.java:44) - Log out button is displayed after wait: true
+2023-10-25T16:05:20,004 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:05:21,987 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:05:24,112 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:05:28,993 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:05:30,835 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:05:32,698 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:05:37,363 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:05:39,361 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:05:40,968 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:05:46,249 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:05:49,686 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:05:51,269 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:05:57,183 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:05:59,384 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:06:01,219 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:06:06,318 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:06:08,136 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:06:10,548 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:06:16,681 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T16:06:20,728 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:06:22,641 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:06:24,834 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:06:30,447 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:06:33,059 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:08:13,257 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:08:17,409 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:08:25,270 [main] INFO  (MenuPage.java:41) - Log out button is displayed before wait: true
+2023-10-25T16:08:25,515 [main] INFO  (MenuPage.java:44) - Log out button is displayed after wait: true
+2023-10-25T16:08:29,323 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:08:32,292 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:08:36,006 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:08:42,062 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:08:45,373 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:08:50,500 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:08:57,667 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:09:00,455 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:09:02,631 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:09:09,918 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:09:13,221 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:09:15,108 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:09:22,129 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:09:25,443 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:09:28,012 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:09:36,235 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:09:40,201 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:09:45,697 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:09:56,567 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T16:10:01,632 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:10:04,280 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:10:07,340 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:10:15,404 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T16:10:27,208 [main] INFO  (CartPage.java:49) - Delete a item from cart
+2023-10-25T16:10:29,572 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T16:10:32,366 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T16:10:34,494 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T16:10:42,058 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T16:11:00,817 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:06:01,730 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:06:05,810 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:06:11,049 [main] INFO  (MenuPage.java:41) - Log out button is displayed before wait: true
+2023-10-25T21:06:11,416 [main] INFO  (MenuPage.java:44) - Log out button is displayed after wait: true
+2023-10-25T21:06:15,880 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:06:23,950 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:06:26,437 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:06:33,690 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:06:45,561 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:06:48,902 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:06:55,184 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:07:01,829 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:07:04,768 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:07:10,749 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:07:17,383 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:07:20,335 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:07:28,412 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:07:35,779 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:07:38,073 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:07:49,493 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:08:29,837 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:08:31,618 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:08:37,716 [main] INFO  (MenuPage.java:41) - Log out button is displayed before wait: true
+2023-10-25T21:08:38,030 [main] INFO  (MenuPage.java:44) - Log out button is displayed after wait: true
+2023-10-25T21:08:41,107 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:08:44,488 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:08:46,249 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:08:51,489 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:08:53,970 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:08:55,492 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:09:00,148 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:09:02,282 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:09:03,889 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:09:08,821 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:09:10,446 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:09:12,217 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:09:17,687 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:09:19,656 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:09:21,315 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:09:26,510 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:09:28,319 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:09:30,035 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:09:36,875 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T21:09:41,080 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:09:44,822 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:09:46,336 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:09:51,942 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T21:09:58,331 [main] INFO  (CartPage.java:49) - Delete a item from cart
+2023-10-25T21:10:00,650 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:10:02,701 [main] INFO  (BaseTest.java:44) - Opening browser chrome
+2023-10-25T21:10:04,605 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:10:10,800 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T21:10:22,285 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:10:29,880 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:10:34,033 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:10:39,296 [main] INFO  (MenuPage.java:41) - Log out button is displayed before wait: true
+2023-10-25T21:10:39,375 [main] INFO  (MenuPage.java:44) - Log out button is displayed after wait: true
+2023-10-25T21:10:44,895 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:10:52,342 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:10:54,948 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:11:01,457 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:11:08,337 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:11:11,931 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:11:18,076 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:11:24,601 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:11:27,310 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:11:33,106 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:11:39,763 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:11:44,299 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:11:51,872 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:11:59,950 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:12:04,917 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:12:12,485 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:12:19,839 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:12:22,281 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:12:28,035 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T21:12:33,370 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:12:39,975 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:12:47,562 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:12:53,240 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T21:12:59,951 [main] INFO  (CartPage.java:49) - Delete a item from cart
+2023-10-25T21:13:03,691 [main] INFO  (BaseTest.java:87) - Closing the driver
+2023-10-25T21:13:10,432 [main] INFO  (BaseTest.java:44) - Opening browser firefox
+2023-10-25T21:13:13,008 [main] INFO  (BaseTest.java:50) - Navigate to https://www.demoblaze.com
+2023-10-25T21:13:18,668 [main] INFO  (LaptopsPage.java:32) - Clicking on first item:Sony vaio i5
+2023-10-25T21:13:29,433 [main] INFO  (BaseTest.java:87) - Closing the driver

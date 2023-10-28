@@ -29,7 +29,7 @@ Automatizar la compra de un artículo en el sitio web https://www.demoblaze.com/
 
 5. Crear un repositorio de GitHub: Se debe crear un repositorio en GitHub que incluya el código fuente, el archivo de configuración de TestNG, las capturas de pantalla y el informe HTML.
 
-6. Agregar un README: En el repositorio, se debe incluir un archivo README.md que explique cómo configurar y ejecutar el proyecto, junto con cualquier información adicional.
+6. Agregar un README: En el repositorio, se debe incluir un archivo README.md 
 
 7. Compartir el proyecto: Finalmente, se debe compartir el enlace del repositorio de GitHub o un archivo .zip que contenga el proyecto con la solución a la dirección de correo electrónico juandlopezf@gmail.com.
 

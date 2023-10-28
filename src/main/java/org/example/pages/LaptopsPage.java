@@ -30,8 +30,9 @@ public class LaptopsPage extends BasePage {
     public void selectFirstItem() throws IOException {
         String getFirstLaptopName = getFirstItemName();
         log.info("Clicking on first item:" + getFirstLaptopName);
-        driver.findElement(laptopLocator).click();
         ScreenShotHelper.takeScreenShotAndAdToHTMLReport(driver, Status.INFO, "Select first item");
+        driver.findElement(laptopLocator).click();
+
     }
 
 }
