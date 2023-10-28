@@ -12,7 +12,7 @@ public class WebDriverFactory {
             case "windows 10":
                 driver = createDriverForWindows(browser);
                 break;
-            case "mac":
+            case "mac os x":
                 driver = createDriverForMac(browser);
                 break;
             case "linux":

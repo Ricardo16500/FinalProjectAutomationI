@@ -7,6 +7,16 @@
 
 ## Configuración del proyecto
 
+El proyecto contempla los siguientes sistemas operativos:
+
+- Windows 10 (64 bits)
+- MacOS Sonoma (14.0) (M1)
+- Ubuntu 20.04.3 LTS (64 bits)
+
+** Otros sistemas operativos no han sido probados y probablemente no funcionen correctamente **
+
+## Lineamientos del proyecto
+
 Automatizar la compra de un artículo en el sitio web https://www.demoblaze.com/ utilizando Selenium, Java y TestNG implica los siguientes pasos:
 
 1. Configurar el proyecto: Se debe crear un proyecto Java y agregar las dependencias necesarias de Selenium y TestNG. Luego, configurar el proyecto para admitir tanto Chrome como Firefox.
