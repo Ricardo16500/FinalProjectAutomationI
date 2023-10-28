@@ -12,13 +12,14 @@ import java.io.IOException;
 public class PurchaseTest extends BaseTest {
     String expectedUser = "UserTest";
     String expectedAmount = "790";
+
     @BeforeMethod
     public void setUpPurchaseTest() throws IOException {
         MenuPage menuPage = new MenuPage(driver);
         menuPage.clickOnLogInBtn();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginWithCredentials("userTest123456", "userTest123456");
+        loginPage.loginWithCredentials(getUser(), getPassword());
         menuPage.clickOnLaptopsButton();
 
         LaptopsPage laptopsPage = new LaptopsPage(driver);
@@ -30,7 +31,7 @@ public class PurchaseTest extends BaseTest {
         menuPage.clickOnCartButton();
     }
 
-    @Test(description = "Purchase test",  enabled = true)
+    @Test(description = "Purchase test", enabled = true)
     public void purchaseTest() throws IOException {
         CartPage cartPage = new CartPage(driver);
         cartPage.placeOrder();
@@ -40,12 +41,13 @@ public class PurchaseTest extends BaseTest {
 
         PurchasePage purchasePage = new PurchasePage(driver);
         Assert.assertTrue(purchasePage.purchaseTextIsDisplayed());
-        Assert.assertEquals(purchasePage.getOrderValues()[1], expectedAmount+" USD");
+        Assert.assertEquals(purchasePage.getOrderValues()[1], expectedAmount + " USD");
         Assert.assertEquals(purchasePage.getOrderValues()[0], expectedUser);
 
     }
+
     @AfterMethod
-    public void afterPurchaseTest(){
+    public void afterPurchaseTest() {
         PurchasePage purchasePage = new PurchasePage(driver);
         purchasePage.clickOnOk();
     }

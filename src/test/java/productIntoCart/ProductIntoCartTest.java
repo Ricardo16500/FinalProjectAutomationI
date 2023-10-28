@@ -19,7 +19,7 @@ public class ProductIntoCartTest extends BaseTest {
         menuPage.clickOnLogInBtn();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.loginWithCredentials("userTest123456", "userTest123456");
+        loginPage.loginWithCredentials(getUser(), getPassword());
         menuPage.clickOnLaptopsButton();
 
         LaptopsPage laptopsPage = new LaptopsPage(driver);
