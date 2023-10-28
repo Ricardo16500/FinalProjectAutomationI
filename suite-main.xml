@@ -2,11 +2,11 @@
 
 <suite name="Full Regression" verbose="1">
 
-
-
     <test name="Regression Test in Chrome">
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
+        <parameter name="user" value="userTest123456"/>
+        <parameter name="password" value="userTest123456"/>
         <packages>
             <package name="login"/>
             <package name="descriptionProduct"/>
@@ -17,6 +17,8 @@
     <test name="Regression Test in Firefox">
         <parameter name="browser" value="firefox"/>
         <parameter name="url" value="https://www.demoblaze.com"/>
+        <parameter name="user" value="userTest123456"/>
+        <parameter name="password" value="userTest123456"/>
         <packages>
             <package name="login"/>
             <package name="descriptionProduct"/>
